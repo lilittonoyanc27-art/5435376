@@ -1,0 +1,6 @@
+{
+  "name": "Quién Quiere Ser Millonario - Español Práctico",
+  "description": "Интерактивная игра 'Кто хочет стать миллионером' для практики испанского языка в реальных ситуациях (кино, магазин, дорога, супермаркет) с мгновенным переводом на русский.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

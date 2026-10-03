@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #050a18;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Cinzel', serif, system-ui;
+  }
+}
+
+/* TV Game Show Classic Angled Badge Style */
+.hex-clip {
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+}
+
+.hex-border {
+  position: relative;
+}
+
+.hex-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+  background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 50%, #1e3a8a 100%);
+  z-index: -1;
+}
+
+/* Studio ambient lights */
+.studio-spotlight-left {
+  background: radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 60%);
+}
+
+.studio-spotlight-right {
+  background: radial-gradient(circle at 90% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 60%);
+}
+
+.studio-center-glow {
+  background: radial-gradient(circle at 50% 60%, rgba(30, 58, 138, 0.25) 0%, transparent 70%);
+}
+
+/* Shimmer animation for golden checkpoints */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #facc15 30%, #eab308 70%, #fef08a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
